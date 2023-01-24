@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.073c9b0a.css",
-    "main.js": "/react-gh-pages/static/js/main.5ce9f9ae.js",
-    "static/js/787.7710c909.chunk.js": "/react-gh-pages/static/js/787.7710c909.chunk.js",
-    "static/media/logo.svg": "/react-gh-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.073c9b0a.css.map": "/react-gh-pages/static/css/main.073c9b0a.css.map",
-    "main.5ce9f9ae.js.map": "/react-gh-pages/static/js/main.5ce9f9ae.js.map",
-    "787.7710c909.chunk.js.map": "/react-gh-pages/static/js/787.7710c909.chunk.js.map"
+    "main.css": "/tarantintoes/static/css/main.12a8b78a.css",
+    "main.js": "/tarantintoes/static/js/main.54243778.js",
+    "index.html": "/tarantintoes/index.html",
+    "main.12a8b78a.css.map": "/tarantintoes/static/css/main.12a8b78a.css.map",
+    "main.54243778.js.map": "/tarantintoes/static/js/main.54243778.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5ce9f9ae.js"
+    "static/css/main.12a8b78a.css",
+    "static/js/main.54243778.js"
   ]
 }
