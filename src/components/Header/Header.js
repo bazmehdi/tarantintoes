@@ -27,7 +27,7 @@ class Header extends Component {
         <header>
             <div>
                 <div className="logo" ref={this.logoItem}>
-                    <NavLink to='/tarantintoes'>TARANTINTOES</NavLink>
+                    <NavLink to='/'>TARANTINTOES</NavLink>
                 </div>
             </div>
         </header>
