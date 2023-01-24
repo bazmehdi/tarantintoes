@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tarantintoes/static/css/main.12a8b78a.css",
-    "main.js": "/tarantintoes/static/js/main.54243778.js",
+    "main.js": "/tarantintoes/static/js/main.ffa9e59b.js",
     "index.html": "/tarantintoes/index.html",
     "main.12a8b78a.css.map": "/tarantintoes/static/css/main.12a8b78a.css.map",
-    "main.54243778.js.map": "/tarantintoes/static/js/main.54243778.js.map"
+    "main.ffa9e59b.js.map": "/tarantintoes/static/js/main.ffa9e59b.js.map"
   },
   "entrypoints": [
     "static/css/main.12a8b78a.css",
-    "static/js/main.54243778.js"
+    "static/js/main.ffa9e59b.js"
   ]
 }
