@@ -16,11 +16,11 @@ class App extends Component {
           <Header />
           <Routes>
             <Route exact path='/'>
-              <Route component={<Home/>} />
-              <Route component={<Grid/>} />
+              <Route element={<Home/>} />
+              <Route element={<Grid/>} />
             </Route>
-            <Route path='/:id' component={<Movie/>} />
-            <Route component={<Error/>} />
+            <Route path='/:id' element={<Movie/>} />
+            <Route element={<Error/>} />
           </Routes>
           {/*<Footer />*/}
         </div>
