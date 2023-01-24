@@ -1,0 +1,186 @@
+@import '../../_config.scss';
+
+/*Box*/
+.home-wrapper{
+    text-align: center;
+
+    .home-box {
+        position:relative;
+        display: inline-block;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000000;
+        height: 771px;
+        width: 1402px;
+        @include transition(0.1s);
+        @include box-shadow(0px 0px 6px 2px rgba(0,0,0,0.5));
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover {
+
+            .overlay {
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6));
+                @include transition(0.25s);
+            }
+
+            .desktop {
+                visibility: visible;
+            }
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0);
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin:0;
+            padding:0;
+            @include transition(0.1s);
+        }
+
+        .desktop {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            z-index: 3;
+            visibility: hidden;
+            color: $white;
+            font-weight: 500;
+            font-size: 1.7em;
+        }
+    }
+
+    .mobile {
+        display: none;
+        color: $white;
+        font-weight: 500;
+    }
+}
+
+/*TABLET1*/
+@media screen and (max-width: 1402px) {
+	.home-wrapper {
+        
+        .home-box {
+            height: 461px;
+            width: 838px;
+
+            .desktop {
+                font-size: 1em;
+            }
+        }
+	}
+}
+
+/*TABLET2*/
+@media screen and (max-width: 1024px) {
+	.home-wrapper {
+        
+        .home-box {
+            height: 383px;
+            width: 697px;
+            
+            .desktop {
+                font-size: 0.9em;
+            }
+        }
+	}
+}
+
+/*MOBILE1*/
+@media screen and (max-width: 700px) {
+	.home-wrapper {
+        
+        .home-box {
+            height: 306px;
+            width: 556px;
+            
+            &:hover {
+
+                .overlay {
+                    display: none;
+                }
+
+            }
+    
+            .overlay {
+                display: none;
+            }
+
+            .desktop {
+                font-size: 0.7em;
+                display: none;
+            }
+        }
+
+        .mobile {
+            display: block;
+            font-size: 1em;
+        }
+	}
+}
+
+/*MOBILE2*/
+@media screen and (max-width: 600px) {
+	.home-wrapper {
+        
+        .home-box {
+            height: 208px;
+            width: 380px;
+            
+            .desktop {
+                font-size: 0.45em;
+            }
+        }
+
+        .mobile {
+            font-size: 0.7em;
+        }
+	}
+}
+
+/*MOBILE3*/
+@media screen and (max-width: 400px) {
+	.home-wrapper {
+        
+        .home-box {
+            height: 192px;
+            width: 350px;
+            
+            .desktop {
+                font-size: 0.1em;
+            }
+        }
+
+        .mobile {
+            display: block;
+            font-size: 0.4em;
+        }
+	}
+}
+
+/*MOBILE4*/
+@media screen and (max-width: 370px) {
+	.home-wrapper {
+        
+        .home-box {
+            height: 119px;
+            width: 217px;
+            
+            .desktop {
+                font-size: 0.1em;
+            }
+        }
+
+        .mobile {
+            display: block;
+            font-size: 0.4em;
+        }
+	}
+}

@@ -1,0 +1,76 @@
+/* Variables */
+
+$black: #131313;
+$white: #fcfcfc;
+$purple: #17172e;
+$orange: #f19001;
+$red: #fd0b09;
+$mainfont: 'Open Sans', sans-serif;
+$headerfont: 'Titillium Web', sans-serif;
+
+
+p, h2, h3 {
+    font-family: $mainfont;
+}
+
+.body {
+    max-width: 1402px;
+    margin-top: 9.5em;
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+}
+
+/*TABLET*/
+@media screen and (max-width: 1024px) {
+	.body {
+		max-width: 1024px;
+		margin-top: 7em;
+	}
+}
+
+/*MOBILE1*/
+@media screen and (max-width: 600px) {
+	.body {
+		max-width: 400px;
+		margin-top: 5.5em;
+	}
+}
+
+/*MOBILE2*/
+@media screen and (max-width: 400px) {
+	.body {
+		max-width: 400px;
+		margin-top: 2.5em;
+	}
+}
+
+
+/* Mixins */
+
+@mixin transition($e) {
+    -webkit-transition: -webkit-transform $e;
+	-moz-transition: -moz-transform $e;
+	-ms-transition:  -ms-transform $e;
+	transition:  transform $e;
+}
+
+@mixin transform($e) {
+    -webkit-transform: $e;
+	-moz-transform: $e;
+	-ms-transform: $e;
+	transform: $e;
+}
+
+@mixin box-shadow($e) {
+    -webkit-box-shadow: $e;
+	-moz-box-shadow: $e;
+	box-shadow: $e;
+}
+
+@mixin transition-duration($e) {
+    -webkit-transition-duration: -webkit-transform $e;
+	-moz-transition-duration: -moz-transform $e;
+	-ms-transition-duration:  -ms-transform $e;
+	transition-duration:  transform $e;
+}

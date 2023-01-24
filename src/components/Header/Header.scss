@@ -1,0 +1,79 @@
+@import '../../_config.scss';
+
+header {
+    background: $black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-box-shadow: 0px 4px 5px -3px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 4px 5px -3px rgba(0,0,0,0.46);
+    box-shadow: 0px 4px 5px -3px rgba(0,0,0,0.46);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+
+    div {
+        max-width: 1366px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $headerfont;
+        color: $red;
+        text-shadow: 0px 7px $red;
+        @include transform(translateY(10px));
+    }
+
+    .logo {
+        font-size: 4em;
+        margin: 0.2em 0px 0.2em 0em;
+        text-align: center;
+        opacity: 0;
+
+        a {
+            text-decoration: none;
+            color: $orange;
+        }
+
+        .smaller {
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+        div {
+            text-shadow: 0px 5px $red;
+
+            .logo {
+                font-size: 3em;
+            }
+        }
+	}
+}
+
+
+/*MOBILE1*/
+@media screen and (max-width: 600px) {
+	header {
+        div {
+            text-shadow: 0px 4px $red;
+
+            .logo {
+                font-size: 2.5em;
+            }
+        }
+	}
+}
+
+/*MOBILE2*/
+@media screen and (max-width: 400px) {
+	header {
+        div {
+            text-shadow: 0px 2px $red;
+
+            .logo {
+                font-size: 1em;
+            }
+        }
+	}
+}
