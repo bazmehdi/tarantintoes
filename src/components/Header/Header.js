@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TweenMax, Power3} from 'gsap';
+import {gsap, Power1} from 'gsap';
 import { NavLink } from 'react-router-dom'
 import './Header.scss';
 
@@ -10,16 +10,15 @@ class Header extends Component {
     }
 
     componentDidMount() {
-        console.log(this.logoItem.current);
-        TweenMax.to(
-            this.logoItem.current,
-            0.5,
-            {
-                opacity: 1,
-                y:-10,
-                ease: Power3.easeOut
+        //console.log(this.logoItem.current);
+        gsap.to(
+            this.logoItem.current, {
+                opacity: 1, 
+                y:-10, 
+                ease: Power1.easeOut, 
+                duration: 0.5
             }
-        )
+        );
     }
 
     render() {
